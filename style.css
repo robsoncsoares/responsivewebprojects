@@ -1,0 +1,48 @@
+html {
+    /* Setting a base font size of 10px give us easier rem calculations
+       Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+     */
+    font-size: 62.5%;
+}
+
+body{
+  margin: 0;
+}
+
+/*
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+  max-width: 980px;
+  margin: auto;
+  border-style: solid;
+}
+*/
+.navigation ul {
+  list-style: none;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 980px;
+  background-color: black;
+  padding: 20px 20px;
+}
+
+.navigation a {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  padding: 21px 21px;
+}
+
+.navigation a:hover {
+  background:grey;
+}
