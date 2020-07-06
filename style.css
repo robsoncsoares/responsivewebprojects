@@ -5,31 +5,46 @@ html {
     font-size: 62.5%;
 }
 
-body{
+body {
   margin: 0;
-}
-
-/*
-.navigation {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  padding: 1px;
+}
 
+header {
   width: 100%;
   max-width: 980px;
-  margin: auto;
   border-style: solid;
+  padding: 10px;
 }
-*/
+
+main {
+  width: 100%;
+  max-width: 980px;
+  border-style: solid;
+  padding: 10px;
+}
+
+footer {
+  width: 100%;
+  max-width: 980px;
+  border-style: solid;
+  padding: 10px;
+}
+
+header h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
 .navigation ul {
   list-style: none;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 100%;
-  max-width: 980px;
   background-color: black;
   padding: 20px 20px;
 }
@@ -45,4 +60,11 @@ body{
 
 .navigation a:hover {
   background:grey;
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-gap: 20px;
+  padding: 5px;
 }
