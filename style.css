@@ -9,7 +9,9 @@ body {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
+  flex-flow: column nowrap;
   justify-content: space-around;
+  align-items: center;
 }
 
 header {
@@ -21,6 +23,12 @@ main {
   width: 100%;
   max-width: 980px;
 }
+
+/*
+main div{
+  border-style: solid;
+}
+*/
 
 footer {
   width: 100%;
@@ -56,9 +64,19 @@ header h1 {
 
 .mainContainer {
   display: grid;
-  grid-template-columns: 60% 40%;
-  grid-gap: 20px;
+  grid-template-columns: 40% 60%;
   margin: 40px 0px;
+  justify-items: center;
+  font-size: 1.5rem;
+}
+
+.mainContainer img {
+  max-width: 100%;
+  height: auto;
+}
+
+.mainText {
+  margin: 0px 30px;
 }
 
 .footerContainer {
