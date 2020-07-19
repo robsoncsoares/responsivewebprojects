@@ -1,2 +1,2 @@
 # responsivewebprojects
-Responsive Web Projects
+Responsive Web Project
