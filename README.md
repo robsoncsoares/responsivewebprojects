@@ -6,7 +6,7 @@
   <li><b>Responsive Web Design Projects - Build a Tribute Page:</b>
        <ul>
         <li><a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page">Documentation</a></li>
-        <li><a href="https://codepen.io/robsoncsoares/pen/WNrLvwb">Code Pen construction</a></li>
+        <li><a href="https://codepen.io/robsoncsoares/pen/WNrLvwb">Code Pen Construction (20/07/2020)</a></li>
       </ul>
   </li>
 </ul>
