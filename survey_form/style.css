@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+
+html {
+    /* Setting a base font size of 10px give us easier rem calculations
+       Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+     */
+    font-size: 62.5%;
+    font-family: 'Graduate', cursive;
+    color: white;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+  background-image: linear-gradient(
+      to right,
+      rgba(64, 197, 126, 0.8),
+      rgba(136, 206, 177, 0.7)
+  ), url(https://cortlandstandard.net/wp-content/uploads/2019/11/Sports--678x381.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header {
+  width: 100%;
+  max-width: 600px;
+}
+
+main {
+  width: 100%;
+  max-width: 600px;
+}
+
+footer {
+  width: 100%;
+  max-width: 600px;
+}
+
+.moldure {
+  background-color:rgba(0, 0, 0, 0.4);
+  border-radius: 70px 30px;
+  padding: 10px 30px;
+}
+
+/*
+main div{
+  border-style: solid;
+}
+*/
+
+
+.headerContainer {
+  margin: 15px 0px;
+}
+
+.headerContainer h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.headerContainer p {
+  text-align: center;
+}
+
+.mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 1px 0px;
+}
+
+.footerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 15px 0px;
+}
+
+.form-control{
+  font-family: 'Graduate', cursive;
+}
+
+@media only screen and (max-width: 600px) {
+  header h1 {
+    font-size: 3.5rem;
+  }
+
+  .mainContainer {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 40px 0px;
+    justify-items: center;
+  }
+
+  body {
+    font-size: 1.7rem;
+  }
+
+}

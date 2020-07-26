@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="headerContainer moldure">
+            <h1 id="title">Sports Survey</h1>
+            <p>Thank you for taking the time to participate in sports research!</p>
+        </div>
+    </header>
+
+
+    <main id="main">
+        <form class="mainContainer moldure">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  required
+                />
+             </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Enter your Email"
+                  required
+                />
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number"
+                  >Age<span class="clue">(optional)</span></label>
+                <input
+                  type="number"
+                  name="age"
+                  id="number"
+                  min="10"
+                  max="99"
+                  class="form-control"
+                  placeholder="Age"
+                />
+              </div>
+              
+              <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                  Submit
+                </button>
+              </div>
+        </form>
+    </main>
+
+
+    <footer>
+        <div class="footerContainer moldure">
+            <p><b>Author:</b> Robson de C. Soares</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
