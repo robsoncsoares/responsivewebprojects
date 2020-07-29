@@ -2,76 +2,104 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Survey Form</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Survey Form</title>
 </head>
 
 <body>
 
-    <header>
-        <div class="headerContainer moldure">
-            <h1 id="title">Sports Survey</h1>
-            <p>Thank you for taking the time to participate in sports research!</p>
-        </div>
-    </header>
+  <header>
+    <div class="headerContainer moldure">
+      <h1 id="title">Sports Survey</h1>
+      <p>Thank you for taking the time to participate in sports research!</p>
+    </div>
+  </header>
 
 
-    <main id="main">
-        <form class="mainContainer moldure">
-            <div class="form-group">
-                <label id="name-label" for="name">Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  class="form-control"
-                  placeholder="Enter your name"
-                  required
-                />
-             </div>
+  <main id="main">
+    <form class="mainContainer moldure">
+      <div class="form-group">
+        <p><label id="name-label" for="name">Name</label></p>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+      </div>
 
-            <div class="form-group">
-                <label id="email-label" for="email">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  class="form-control"
-                  placeholder="Enter your Email"
-                  required
-                />
-            </div>
+      <div class="form-group">
+        <p><label id="email-label" for="email">Email</label></p>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+      </div>
 
-            <div class="form-group">
-                <label id="number-label" for="number"
-                  >Age<span class="clue">(optional)</span></label>
-                <input
-                  type="number"
-                  name="age"
-                  id="number"
-                  min="10"
-                  max="99"
-                  class="form-control"
-                  placeholder="Age"
-                />
-              </div>
-              
-              <div class="form-group">
-                <button type="submit" id="submit" class="submit-button">
-                  Submit
-                </button>
-              </div>
-        </form>
-    </main>
+      <div class="form-group">
+        <p><label id="number-label" for="number">Age<span class="clue"> (optional)</span></label></p>
+        <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+      </div>
+
+      <div class="form-group">
+        <p>Gender</p>
+        <input name="gender" id="male" value="male" type="radio" class="input-radio" checked />
+        <label id="gender-label" for="male">Male</label>
+        <input name="gender" id="female" value="female" type="radio" class="input-radio" />
+        <label id="gender-label" for="female">Female</label>
+        <input name="gender" id="other" value="other" type="radio" class="input-radio" />
+        <label id="gender-label" for="other">Other</label>
+      </div>
+
+      <div class="form-group">
+        <p>What frequency do you exercise?</p>
+        <select id="frequency" name="frequency" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="1time">Once a week</option>
+          <option value="2times">2 times a week</option>
+          <option value="3times">3 times a week</option>
+          <option value="more3times">more than 3 times a week</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Which sport do you like best?</p>
+        <input name="sports" id="soccer" value="soccer" type="checkbox" class="input-check" />
+        <label id="sports-label" for="soccer">Soccer</label>
+        <input name="sports" id="badminton" value="badminton" type="checkbox" class="input-check" />
+        <label id="sports-label" for="female">Badminton</label>
+        <input name="sports" id="field-hockey" value="field-hockey" type="checkbox" class="input-check" />
+        <label id="sports-label" for="other">Field Hockey</label>
+        <input name="sports" id="volleyball" value="volleyball" type="checkbox" class="input-check" />
+        <label id="sports-label" for="other">Volleyball</label>
+        <input name="sports" id="basketball" value="basketball" type="checkbox" class="input-check" />
+        <label id="sports-label" for="other">Basketball</label>
+        <input name="sports" id="tennis" value="tennis" type="checkbox" class="input-check" />
+        <label id="sports-label" for="other">Tennis</label>
+        <input name="sports" id="cricket" value="cricket" type="checkbox" class="input-check" />
+        <label id="sports-label" for="other">Cricket</label>
+        <input name="sports" id="table-tennis" value="table-tennis" type="checkbox" class="input-check" />
+        <label id="sports-label" for="other">Table Tennis</label>
+        <input name="sports" id="baseball" value="baseball" type="checkbox" class="input-check" />
+        <label id="sports-label" for="other">Baseball</label>
+        <input name="sports" id="golf" value="golf" type="checkbox" class="input-check" />
+        <label id="sports-label" for="other">Golf</label>
+      </div>
+      
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+
+    </form>
+  </main>
 
 
-    <footer>
-        <div class="footerContainer moldure">
-            <p><b>Author:</b> Robson de C. Soares</p>
-        </div>
-    </footer>
+  <footer>
+    <div class="footerContainer moldure">
+      <p><b>Author:</b> Robson de C. Soares</p>
+    </div>
+  </footer>
 
 </body>
 
