@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
 
+
 html {
     /* Setting a base font size of 10px give us easier rem calculations
        Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
@@ -12,11 +13,9 @@ html {
 body {
   margin: 0;
   display: flex;
-  flex-wrap: wrap;
-  flex-flow: column nowrap;
-  justify-content: space-around;
+  flex-flow: column;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   background-image: linear-gradient(
       to right,
       rgba(64, 197, 126, 0.8),
@@ -54,13 +53,12 @@ main div{
 }
 */
 
-
 .headerContainer {
   margin: 15px 0px;
 }
 
 .headerContainer h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 
@@ -70,8 +68,7 @@ main div{
 
 .mainContainer {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
   margin: 1px 0px;
 }
 
@@ -82,24 +79,54 @@ main div{
   margin: 15px 0px;
 }
 
-.form-control{
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.form-group2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.form-control {
   font-family: 'Graduate', cursive;
+  padding: 0.4rem 0.1rem;
+  font-size: 1.2rem;
+}
+
+.input-textarea {
+  min-height: 100px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 0.8rem;
+  font-family: 'Graduate', cursive;
+  color: white;
+  border-radius:70px 30px;
+  border-color: white;
+  border-width: 0.5px;
+  margin: 10px 0px;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
-  header h1 {
-    font-size: 3.5rem;
-  }
-
-  .mainContainer {
-    display: grid;
-    grid-template-columns: 100%;
-    margin: 40px 0px;
-    justify-items: center;
+  
+  
+ .headerContainer h1 {
+    font-size: 3rem;
   }
 
   body {
-    font-size: 1.7rem;
+    font-size: 2rem;
+  }
+
+  .form-control {
+    font-size: 1.5rem;
   }
 
 }
