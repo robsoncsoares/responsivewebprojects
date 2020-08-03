@@ -2,8 +2,7 @@
 
 Repository for the creation of responsive web projects in order to study technologies, tools and languages.
 
-List of created projects:
--------------------------
+## List of created projects:
 
 1. Responsive Web Design Projects - Build a Tribute Page:
    * [Documentation](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page)
