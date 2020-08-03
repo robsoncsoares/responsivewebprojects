@@ -1,45 +1,37 @@
 html {
     /* Setting a base font size of 10px give us easier rem calculations
-       Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
-     */
+     Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+   */
     font-size: 62.5%;
 }
 
 body {
     margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    align-items: center;
     font-size: 1.6rem;
 }
 
 header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 980px;
+    padding: 20px 0;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgba(255, 255, 255, 0.72);
 }
-
-main {
-    width: 100%;
-    max-width: 980px;
-}
-
-
-/*
-main div{
-  border-style: solid;
-}
-*/
 
 footer {
+    display: block;
+    position: fixed;
     width: 100%;
-    max-width: 980px;
-}
-
-header h1 {
-    font-size: 3rem;
-    text-align: center;
+    bottom: 0vh;
+    left: 0;
+    padding: 20px 0;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgba(255, 255, 255, 0.72);
 }
 
 .navigation ul {
@@ -48,12 +40,11 @@ header h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: black;
     padding: 20px 20px;
 }
 
 .navigation a {
-    color: white;
+    color: palevioletred;
     text-decoration: none;
     text-align: center;
     padding: 20px 20px;
@@ -98,16 +89,15 @@ header h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: black;
 }
 
 .footerContainer a {
-    color: white;
+    color: palevioletred;
     padding: 0px 5px;
 }
 
 .footerContainer p {
-    color: white;
+    color: palevioletred;
     padding: 0px 5px;
     text-align: center;
 }
