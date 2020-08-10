@@ -128,7 +128,8 @@ footer {
 }
 
 .footerContainer a {
-    color: black padding: 0px 5px;
+    color: black;
+    padding: 0px 5px;
 }
 
 .footerContainer p {
