@@ -14,5 +14,9 @@ Repository for the creation of responsive web projects in order to study technol
    * src: /tribute_page
 3. Responsive Web Design Projects - Build a Product Landing Page:
    * [Documentation](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page)
-   * [Code Pen Construction (building)]()
+   * [Code Pen Construction (23/08/2020)](https://codepen.io/robsoncsoares/pen/oNxBLLg)
    * src: /landing_page
+4. Responsive Web Design Projects - Build a Technical Documentation Page
+   * [Documentation](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page)
+   * [Code Pen Construction (building)]()
+   * src: /technical_documentation_page
