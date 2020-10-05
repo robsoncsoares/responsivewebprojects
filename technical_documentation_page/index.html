@@ -15,66 +15,313 @@
     <div class="bodycontainer">
         <!-- https://webdesign.tutsplus.com/tutorials/how-to-build-a-responsive-navigation-bar-with-flexbox--cms-33535  -->
         <header id="header">
-            <nav>
+            <nav id="navbar">
                 <ul class="menu">
-                    <li class="logo"><a href="#">Creative Mind Agency</a></li>
-                    <li class="item"><a href="#">Home</a></li>
-                    <li class="item"><a href="#">About</a></li>
-                    <li class="item"><a href="#">Blog</a></li>
-                    <li class="item"><a href="#">Contact</a></li>
+                    <li class="logo">
+                        <a href="#">
+                            <header>Python Documentation</header>
+                        </a>
+                    </li>
+                    <li class="item"><a class="nav-link" href="#Introduction">Introduction</a></li>
+                    <li class="item"><a class="nav-link" href="#Python_Comments">Python Comments</a></li>
+                    <li class="item"><a class="nav-link" href="#Python_Variables">Python Variables</a></li>
+                    <li class="item"><a class="nav-link" href="#Python_Data_Types">Python Data Types</a></li>
+                    <li class="item"><a class="nav-link" href="#Python_Operators">Python Operators</a></li>
+                    <li class="item"><a class="nav-link" href="#Python_If_Else">Python If Else</a></li>
+                    <li class="item"><a class="nav-link" href="#Python_For_Loops">Python For Loops</a></li>
+                    <li class="item"><a class="nav-link" href="#Reference">Reference</a></li>
                     <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
                 </ul>
             </nav>
         </header>
 
 
-        <main id="main">
-            <section id="section1">
-                <h1>Section 1</h1>
-                <p>
-                    Tie-dye as we know it became popular in the United States in the mid-1950 's. People used direct dying methods with either "natural" or grocery-store type dyes-- randomly folding, twisting, and tying fabric or clothing . The items were then either dipped
-                    or put into a dye bath. The results were simple and varied designs; but they were not vibrant and tended to fade quickly. Still, everybody loved them! TIEDYENAT is specialist in the artisanal production of tie-dye in the most varied
-                    types and styles promoting diversity. We produce to order.
-                </p>
+        <main id="main-doc">
+            <section id="Introduction" class="main-section">
+                <header>
+                    <h1>Introduction</h1>
+                </header>
+                <article>
+                    <h3>What is Python?</h3>
+                    <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+                    <p>It is used for:</p>
+                    <ul>
+                        <li>web development (server-side);</li>
+                        <li>software development;</li>
+                        <li>mathematics;</li>
+                        <li>system scripting.</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Why Python?</h3>
+                    <ul>
+                        <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc);</li>
+                        <li>Python has a simple syntax similar to the English language;</li>
+                        <li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages;</li>
+                        <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick;</li>
+                        <li>Python can be treated in a procedural way, an object-oriented way or a functional way.</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Good to know</h3>
+                    <ul>
+                        <li>The most recent major version of Python is Python 3.
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Python Syntax compared to other programming languages</h3>
+                    <ul>
+                        <li>Python was designed for readability, and has some similarities to the English language with influence from mathematics;</li>
+                        <li>Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses;</li>
+                        <li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Hello World!</h3>
+                    <p><code>print("Hello, World!")</code></p>
+                </article>
             </section>
 
-            <section id="section2">
-                <h1>section 2</h1>
-                <p>
-                    Tie-dye as we know it became popular in the United States in the mid-1950 's. People used direct dying methods with either "natural" or grocery-store type dyes-- randomly folding, twisting, and tying fabric or clothing . The items were then either dipped
-                    or put into a dye bath. The results were simple and varied designs; but they were not vibrant and tended to fade quickly. Still, everybody loved them! TIEDYENAT is specialist in the artisanal production of tie-dye in the most varied
-                    types and styles promoting diversity. We produce to order.
-                </p>
+            <section id="Python_Comments" class="main-section">
+                <header>
+                    <h1>Python Comments</h1>
+                </header>
+                <article>
+                    <h3>When to use comments?</h3>
+                    <ul>
+                        <li>Comments can be used to explain Python code;</li>
+                        <li>Comments can be used to make the code more readable;</li>
+                        <li>Comments can be used to prevent execution when testing code.</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Simple Comments</h3>
+                    <p>Simple Comments starts with a <code>#</code>, and Python will ignore them, examples:</p>
+                    <p>
+                        <code>
+                            #This is a comment
+                            <br>print("Hello, World!")
+                            <br>print("Hello, World!") #This is a comment
+                            <br>#print("Hello, World!")
+                        </code>
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Multi Line Comments</h3>
+                    <p>Python does not really have a syntax for multi line comments.</p>
+                    <p>To add a multiline comment you could insert a <code>#</code> for each line:</p>
+                    <p>
+                        <code>
+                            #This is a comment
+                            <br>#written in
+                            <br>#more than just one line
+                            <br>print("Hello, World!")
+                        </code>
+                    </p>
+                    <p>Or, not quite as intended, you can use a multiline string.</p>
+                    <p>Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it:</p>
+                    <p>
+                        <code>
+                            """
+                            <br>This is a comment
+                            <br>written in
+                            <br>more than just one line
+                            <br>"""
+                            <br>print("Hello, World!")
+                        </code>
+                    </p>
+                </article>
             </section>
 
-            <section id="section3">
-                <h1>section 3</h1>
-                <p>
-                    Tie-dye as we know it became popular in the United States in the mid-1950 's. People used direct dying methods with either "natural" or grocery-store type dyes-- randomly folding, twisting, and tying fabric or clothing . The items were then either dipped
-                    or put into a dye bath. The results were simple and varied designs; but they were not vibrant and tended to fade quickly. Still, everybody loved them! TIEDYENAT is specialist in the artisanal production of tie-dye in the most varied
-                    types and styles promoting diversity. We produce to order.
-                </p>
+
+            <section id="Python_Variables" class="main-section">
+                <header>
+                    <h1>Python Variables</h1>
+                </header>
+                <article>
+                    <h3>Creating Variables</h3>
+                    <p>Variables are containers for storing data values.</p>
+                    <p>Unlike other programming languages, Python has no command for declaring a variable.</p>
+                    <p>A variable is created the moment you first assign a value to it.</p>
+                    <p>
+                        <code>
+                            x = 5
+                            <br> = "John"
+                            <br>print(x)
+                            <br>print(y)
+                        </code>
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Variable Names</h3>
+                    <p>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). Rules for Python variables:</p>
+                    <ul>
+                        <li>A variable name must start with a letter or the underscore character;</li>
+                        <li>A variable name cannot start with a number;</li>
+                        <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ );</li>
+                        <li>Variable names are case-sensitive (age, Age and AGE are three different variables).</li>
+                    </ul>
+                </article>
             </section>
 
-            <section id="section4">
-                <h1>section 4</h1>
-                <p>
-                    Tie-dye as we know it became popular in the United States in the mid-1950 's. People used direct dying methods with either "natural" or grocery-store type dyes-- randomly folding, twisting, and tying fabric or clothing . The items were then either dipped
-                    or put into a dye bath. The results were simple and varied designs; but they were not vibrant and tended to fade quickly. Still, everybody loved them! TIEDYENAT is specialist in the artisanal production of tie-dye in the most varied
-                    types and styles promoting diversity. We produce to order.
-                </p>
+            <section id="Python_Data_Types" class="main-section">
+                <header>
+                    <h1>Python Data Types</h1>
+                </header>
+                <article>
+                    <h3>Built-in Data Types</h3>
+                    <p>In programming, data type is an important concept.</p>
+                    <p>Variables can store data of different types, and different types can do different things.</p>
+                    <p>Python has the following data types built-in by default, in these categories:</p>
+                    <table>
+                        <tr>
+                            <td style="width:160px;">Text Type:</td>
+                            <td><code>str</code></td>
+                        </tr>
+                        <tr>
+                            <td>Numeric Types:</td>
+                            <td><code>int</code>, <code>float</code>, <code>complex</code></td>
+                        </tr>
+                        <tr>
+                            <td>Sequence Types:</td>
+                            <td><code>list</code>, <code>tuple</code>, <code>range</code></td>
+                        </tr>
+                        <tr>
+                            <td>Mapping Type:</td>
+                            <td><code>dict</code></td>
+                        </tr>
+                        <tr>
+                            <td>Set Types:</td>
+                            <td><code>set</code>, <code>frozenset</code></td>
+                        </tr>
+                        <tr>
+                            <td>Boolean Type:</td>
+                            <td><code>bool</code></td>
+                        </tr>
+                        <tr>
+                            <td>Binary Types:</td>
+                            <td><code>bytes</code>, <code>bytearray</code>, <code>memoryview</code></td>
+                        </tr>
+                    </table>
+                </article>
             </section>
 
-            <section id="section5">
-                <h1>section 5</h1>
-                <p>
-                    Tie-dye as we know it became popular in the United States in the mid-1950 's. People used direct dying methods with either "natural" or grocery-store type dyes-- randomly folding, twisting, and tying fabric or clothing . The items were then either dipped
-                    or put into a dye bath. The results were simple and varied designs; but they were not vibrant and tended to fade quickly. Still, everybody loved them! TIEDYENAT is specialist in the artisanal production of tie-dye in the most varied
-                    types and styles promoting diversity. We produce to order.
-                </p>
+            <section id="Python_Operators" class="main-section">
+                <header>
+                    <h1>Python Operators</h1>
+                </header>
+                <article>
+                    <h3>Python Operators</h3>
+                    <p>Operators are used to perform operations on variables and values.</p>
+                    <p>Python divides the operators in the following groups:</p>
+                    <ul>
+                        <li>Arithmetic operators: <code>+, -, *, /, %, **, //</code></li>
+                        <li>Assignment operators: <code>=, +=, -=, *=, /=, %=, //=, **=, &=, |=, ^=, >>=, <<= </code></li>
+                        <li>Comparison operators: <code>==, !=, >, <, >=, <=</code></li>
+                        <li>Logical operators: <code>and, or, not</code></li>
+                        <li>Identity operators: <code>is, is not</code></li>
+                        <li>Membership operators: <code>in, not in</code></li>
+                        <li>Bitwise operators: <code>&, |, ^, -, <<, >></code></li>
+                    </ul>
+                </article>
             </section>
+
+            <section id="Python_If_Else" class="main-section">
+                <header>
+                    <h1>Python If Else</h1>
+                </header>
+                <article>
+                    <h3>Python Conditions and If statements</h3>
+                    <p>Python supports the usual logical conditions from mathematics:</p>
+                    <ul>
+                        <li>Equals: <code>a == b</code></li>
+                        <li>Not Equals: <code>a != b</code></li>
+                        <li>Less than: <code>a &lt; b</code></li>
+                        <li>Less than or equal to: <code>a &lt;= b</code></li>
+                        <li>Greater than: <code>a &gt; b</code></li>
+                        <li>Greater than or equal to: <code>a &gt;= b</code></li>
+                    </ul>
+                    <p>These conditions can be used in several ways, most commonly in "if statements" and loops.</p>
+                    <p>An "if statement" is written by using the <code>if</code> keyword.</p>
+                    <p>
+                        <code>
+                            a = 33
+                            <br>b = 200
+                            <br>if b > a:
+                            <br>&nbsp;&nbsp;&nbsp;print("b is greater than a")
+                        </code>
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Elif</h3>
+                    <p>The <code>elif</code> keyword is pythons way of saying "if the previous conditions were not true, then try this condition".</p>
+                    <p>
+                        <code>
+                            a = 33
+                            <br>b = 33
+                            <br>if b > a:
+                            <br>&nbsp;&nbsp;&nbsp;print("b is greater than a")
+                            <br>elif a == b:
+                            <br>&nbsp;&nbsp;&nbsp;print("a and b are equal")
+                        </code>
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Else</h3>
+                    <p>The <code>else</code> keyword catches anything which isn't caught by the preceding conditions.</p>
+                    <p>
+                        <code>
+                            a = 200
+                            <br>b = 33
+                            <br>if b > a:
+                            <br>&nbsp;&nbsp;&nbsp;print("b is greater than a")
+                            <br>elif a == b:
+                            <br>&nbsp;&nbsp;&nbsp;print("a and b are equal")
+                            <br>else:
+                            <br>&nbsp;&nbsp;&nbsp;print("a is greater than b")
+                        </code>
+                    </p>
+                </article>
+            </section>
+
+            <section id="Python_For_Loops" class="main-section">
+                <header>
+                    <h1>Python For Loops</h1>
+                </header>
+                <article>
+                    <h3>Python For Loops</h3>
+                    <p>A <code>for</code> loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).</p>
+                    <p>This is less like the <code>for</code> keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.</p>
+                    <p>With the <code>for</code> loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
+                    <p>
+                        <code>
+                            fruits = ["apple", "banana", "cherry"]
+                            <br>for x in fruits:
+                            <br>&nbsp;&nbsp;&nbsp;print(x)
+                        </code>
+                    </p>
+                </article>
+            </section>
+
+            <section id="Reference" class="main-section">
+                <header>
+                    <h1>Reference</h1>
+                </header>
+                <article>
+                    <p>All the documentation in this page is taken from <a href="https://www.w3schools.com/python/default.asp">W3schools.</a></p>
+                </article>
+            </section>
+
         </main>
-
 
         <footer id="footer">
             <div class="footerContainer">

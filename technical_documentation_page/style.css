@@ -32,7 +32,7 @@ body {
     grid-template-areas: 'header' 'main' 'footer';
 }
 
-header {
+#header {
     grid-area: header;
     overflow-y: auto;
     padding: 0;
@@ -40,7 +40,7 @@ header {
     background: #222;
 }
 
-main {
+#main-doc {
     grid-area: main;
     display: flex;
     flex-direction: column;
@@ -48,7 +48,7 @@ main {
     padding: 20px;
 }
 
-footer {
+#footer {
     grid-area: footer;
     color: white;
 }
@@ -62,20 +62,24 @@ footer {
     border-top: thin solid white;
 }
 
+code {
+    background-color: #f1f1f1;
+}
+
 
 /* Basic styling */
 
-nav {
+#navbar {
     background: #222;
     padding: 0 15px;
 }
 
-a {
+#navbar a {
     color: white;
     text-decoration: none;
 }
 
-ul {
+#navbar ul {
     padding: 0;
     margin: 0;
 }
