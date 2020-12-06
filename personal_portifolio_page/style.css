@@ -67,20 +67,20 @@ footer {
     background: rgba(255, 255, 255, 0.72);
 }
 
-.introduction {
+.welcome-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-image: url(img/Computer-Degrees.jpg);
+    background-image: url(https://raw.githubusercontent.com/robsoncsoares/responsivewebprojects/master/personal_portifolio_page/img/about_backgorund.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.introduction h1 {
+.welcome-section h1 {
     color: white;
     margin-bottom: 350px;
     text-align: center;
@@ -93,7 +93,7 @@ footer {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-image: url(img/contacts.jpg);
+    background-image: url(https://raw.githubusercontent.com/robsoncsoares/responsivewebprojects/master/personal_portifolio_page/img/contacts_background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
