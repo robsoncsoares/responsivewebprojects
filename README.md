@@ -22,5 +22,5 @@ Repository for the creation of responsive web projects in order to study technol
    * src: /technical_documentation_page
 5. Responsive Web Design Projects - Build a Personal Portfolio Webpage
    * [Documentation](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage)
-   * [Code Pen Construction (building)]()
+   * [Code Pen Construction (2020-11-12)]()
    * src: /personal_portifolio_page

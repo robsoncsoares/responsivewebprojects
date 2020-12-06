@@ -67,30 +67,59 @@ footer {
     background: rgba(255, 255, 255, 0.72);
 }
 
-.what {
+.introduction {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-image: url(https://raw.githubusercontent.com/robsoncsoares/responsivewebprojects/master/landing_page/img/background.jpeg);
+    background-image: url(img/Computer-Degrees.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.what p {
-    text-align: center;
+.introduction h1 {
+    color: white;
     margin-bottom: 350px;
+    text-align: center;
 }
 
-.pricing {
+.contacts {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
+    height: 100vh;
+    background-image: url(img/contacts.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contacts h1 {
+    color: white;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact-details {
+    margin: 20px;
+    font-size: 1.5em;
 }
 
 .footerContainer {
@@ -111,14 +140,23 @@ footer {
     text-align: center;
 }
 
+.portifolio {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    margin: 20px 80px;
+    margin: 20px 10px;
+    background-color: lavender;
 }
 
 .card img {
-    width: 300px;
+    width: 600px;
     height: 300px;
 }
 
@@ -131,33 +169,15 @@ footer {
 }
 
 @media (max-width: 930px) {
-    .signup-form {
-        flex-direction: column;
-        align-items: center;
-        margin: 0px 0px 40px 0px;
-    }
-    .signup-button {
-        min-height: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .signup-input {
-        min-height: 10px;
-        padding: 10px;
-        width: 100%;
-        width: 200px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    header h1 {
-        font-size: 4rem;
-    }
     body {
         font-size: 2rem;
     }
-    .what p {
-        text-align: center;
-        margin-bottom: 0px;
+    .contact-details {
+        font-size: 1.5em;
+    }
+    .card img {
+        height: calc(100% - 6.8rem);
+        width: 100%;
+        object-fit: cover;
     }
 }
